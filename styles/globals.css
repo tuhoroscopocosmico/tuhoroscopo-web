@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #__next { height: 100%; }
+body { @apply bg-[#0b0620] text-white; }
+
+/* Simple gradient star background */
+.bg-cosmic {
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(232,121,249,.08), transparent 60%),
+              radial-gradient(1000px 500px at 90% 10%, rgba(56,189,248,.07), transparent 60%),
+              radial-gradient(700px 350px at 50% 90%, rgba(250,204,21,.06), transparent 60%);
+}
+.container { @apply max-w-xl mx-auto px-4; }
+.card { @apply bg-black/30 rounded-2xl p-6 shadow-xl ring-1 ring-white/10; }
+.input { @apply w-full rounded-xl bg-white/5 px-4 py-3 outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-fuchsia-400; }
+.btn { @apply w-full rounded-xl px-4 py-3 font-semibold bg-gradient-to-r from-fuchsia-500 to-orange-400 hover:opacity-95 active:opacity-90 transition; }
+.label { @apply text-sm font-medium text-white/80 mb-1; }
